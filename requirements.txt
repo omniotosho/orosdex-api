@@ -1,0 +1,4 @@
+cors
+sqlalchemy
+flask
+flask_bcrypt
