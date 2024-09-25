@@ -2,3 +2,5 @@ cors
 sqlalchemy
 flask
 flask_bcrypt
+flask-cors
+flask-sqlalchemy
