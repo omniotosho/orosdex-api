@@ -1,10 +1,10 @@
 from flask import json
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
-from database import app
+from database import app, db
 from customer import *
 
-db = SQLAlchemy(app)
+# db = SQLAlchemy(app)
 
 class Loan(db.Model):
 	

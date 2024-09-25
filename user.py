@@ -1,7 +1,7 @@
 from flask import json
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
-from database import app
+from database import app, db
 from flask_bcrypt import Bcrypt
 import random
 import string
@@ -13,7 +13,7 @@ def randomString(stringLength=8):
 
 bcrypt = Bcrypt()
 
-db = SQLAlchemy(app)
+# db = SQLAlchemy(app)
 
 class User(db.Model):
 	

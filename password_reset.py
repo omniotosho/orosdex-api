@@ -1,12 +1,12 @@
 from flask import json
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
-from database import app
+from database import app, db
 
 from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt()
 
-db = SQLAlchemy(app)
+# db = SQLAlchemy(app)
 
 class PasswordReset(db.Model):
 	
